@@ -1,8 +1,8 @@
 class Claudectx < Formula
   desc "Reduce Claude Code token usage by up to 80%"
-  homepage "https://github.com/Horilla/claudectx"
-  url "https://registry.npmjs.org/claudectx/-/claudectx-1.1.4.tgz"
-  sha256 "f5e778bd0ed948ed46d7a53ab4ff40cd6b3aa471e34f65134fd96a728d58f09f"
+  homepage "https://claudectx.horilla.com"
+  url "https://registry.npmjs.org/claudectx/-/claudectx-1.1.5.tgz"
+  sha256 "906d994805b5fa74d1242f20d12c5f175073e01b76f935f88b136f4ae61119bf"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Claudectx < Formula
   end
 
   test do
-    assert_match "1.1.4", shell_output("#{bin}/claudectx --version")
+    assert_match "1.1.5", shell_output("#{bin}/claudectx --version")
   end
 end
